@@ -21,8 +21,11 @@ public class ContaTerminal {
         System.out.print("Qual valor deseja depositar/transferir? ");
         double saldo = scanner.nextDouble();
 
+        System.out.println("\n===============================================");
         System.out.println(String.format(
-                "Olá %s, obrigado por criar uma conta em nosso banco. Sua agência é %s, conta %s e o saldo R$ %.2f já disponível.",
+                "Olá %s, obrigado por criar uma conta em nosso banco.\n" +
+                        "Sua agência é %s, conta %s e o saldo R$ %.2f já disponível.",
                 nome, agencia, conta, saldo));
+        System.out.println("===============================================");
     }
 }
