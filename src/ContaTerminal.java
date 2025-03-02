@@ -29,5 +29,6 @@ public class ContaTerminal {
                         "Sua agência é %s, conta %s e o saldo R$ %.2f já disponível.",
                 conta.nome, conta.agencia, conta.conta, conta.saldo));
         System.out.println("===============================================");
+        scanner.close();
     }
 }
