@@ -23,12 +23,12 @@ public class ContaTerminal {
         System.out.print("Qual valor deseja depositar/transferir? ");
         conta.saldo = scanner.nextDouble();
 
-        System.out.println("\n===============================================");
+        System.out.println("\n======================================================================");
         System.out.printf(
                 "Olá %s, obrigado por criar uma conta em nosso banco.\n" +
-                        "Sua agência é %s, conta %s e o saldo R$ %.2f já disponível.",
-                conta.nome, conta.agencia, conta.conta, conta.saldo)
-        System.out.println("===============================================");
+                        "Sua agência é %s, conta %s e o saldo R$ %.2f já disponível.\n",
+conta.nome, conta.agencia, conta.conta, conta.saldo); 
+        System.out.println("=======================================================================");
         scanner.close();
     }
 }
