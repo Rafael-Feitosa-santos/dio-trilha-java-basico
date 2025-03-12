@@ -24,10 +24,10 @@ public class ContaTerminal {
         conta.saldo = scanner.nextDouble();
 
         System.out.println("\n===============================================");
-        System.out.println(String.format(
+        System.out.printf(
                 "Olá %s, obrigado por criar uma conta em nosso banco.\n" +
                         "Sua agência é %s, conta %s e o saldo R$ %.2f já disponível.",
-                conta.nome, conta.agencia, conta.conta, conta.saldo));
+                conta.nome, conta.agencia, conta.conta, conta.saldo)
         System.out.println("===============================================");
         scanner.close();
     }
